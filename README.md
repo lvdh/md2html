@@ -5,7 +5,7 @@ A quick test of viash. Converts Markdown to HTML.
 - Runtime: python
 - Platform: docker
 
-```
+```bash
 $ viash --version
 viash 0.3.2 (c) 2020 Data Intuitive
 $ head ipsum.md ipsum.html
