@@ -9,8 +9,6 @@ functionality:
   resources:
   - type: python_script
     path: ./code.py
-  - type: file
-    path: ./ipsum.md
 platforms:
   - type: native # Note: activate venv
   - type: docker
