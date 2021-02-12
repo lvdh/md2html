@@ -1,0 +1,23 @@
+functionality:
+  name: md2html
+  description: Convert a Markdown file to HTML.
+  arguments: 
+  - name: "--input"
+    type: file
+  - name: "--output"
+    type: file
+  resources:
+  - type: python_script
+    path: ./code.py
+  - type: file
+    path: ./ipsum.md
+platforms:
+  - type: native # Note: activate venv
+  - type: docker
+    image: python:3.9.1-slim
+    version: "0.1.0"
+    chown: true
+    setup:
+      - type: python
+        pip: [ markdown2, structlog ]
+  # - type: nextflow
