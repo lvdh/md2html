@@ -8,6 +8,7 @@ A quick test of viash. Converts Markdown to HTML.
 ```bash
 $ viash --version
 viash 0.3.2 (c) 2020 Data Intuitive
+
 $ head ipsum.md ipsum.html
 ==> ipsum.md <==
 viash: from scripts to pipelines
@@ -21,6 +22,7 @@ viash can help you:
 -   wrap your script in an executable with a CLI and –help
     functionality,
 head: cannot open ‘ipsum.html’ for reading: No such file or directory
+
 $ make
 viash build -p docker -m -s config.vsh.yaml
 > docker build -t md2html:0.1.0 /tmp/viashsetupdocker-md2html-5rrVs0
@@ -44,6 +46,7 @@ viash run -p docker config.vsh.yaml -- --input ipsum.md --output ipsum.html
 2021-02-12 13:26.26 [debug    ] Read input ...                 input=/viash_automount/home/ec2-user/environment/src/md2html/ipsum.md
 2021-02-12 13:26.26 [debug    ] Process input ...
 2021-02-12 13:26.26 [debug    ] Write output ...               input=/viash_automount/home/ec2-user/environment/src/md2html/ipsum.html
+
 $ head ipsum.md ipsum.html
 ==> ipsum.md <==
 viash: from scripts to pipelines
